@@ -21,12 +21,12 @@ const Home = () => {
     <div id="myPage">
       {/* Sidebar */}
       <nav className="sidebar" id="mySidebar">
-        <a href="javascript:void(0)" onClick={closeNav} className="closebtn">Close</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
-        <a href="#">Link 5</a>
+        <button onClick={closeNav} className="closebtn">Close</button>
+        <button className="link-btn">Link 1</button>
+        <button className="link-btn">Link 2</button>
+        <button className="link-btn">Link 3</button>
+        <button className="link-btn">Link 4</button>
+        <button className="link-btn">Link 5</button>
       </nav>
 
       {/* Navbar */}
