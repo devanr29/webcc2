@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css'; // Pastikan untuk mengimport CSS
 
 const Home = () => {
+  useEffect(() => {
+    // Membersihkan event listener saat komponen di-unmount
+    return () => {
+      document.getElementById('mySidebar').style.display = 'none';
+    };
+  }, []);
+
   const openNav = () => {
     document.getElementById("mySidebar").style.display = "block";
   };

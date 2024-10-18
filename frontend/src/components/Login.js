@@ -1,4 +1,3 @@
-// src/components/Login.js
 import React, { useState } from 'react';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -27,7 +26,7 @@ const Login = () => {
         <h1>Login</h1>
         <div className="input-box">
           <input 
-            type="text" 
+            type="email" // Ganti type ke email untuk validasi
             placeholder="Email" 
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
@@ -51,7 +50,7 @@ const Login = () => {
         </div>
         <button type="submit" className="button">Login</button>
         <div className="register-link">
-          <p>Don't have an account? <Link to="/register">Register</Link></p> {/* Gunakan Link ke halaman register */}
+          <p>Don't have an account? <Link to="/register">Register</Link></p>
         </div>
       </form>
     </div>
