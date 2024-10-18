@@ -3,7 +3,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -21,9 +21,11 @@ app.post('/login', (req, res) => {
 });
 
 // Rute API lainnya
+// Membuat endpoint API
 app.get('/api/data', (req, res) => {
-  res.json({ message: 'API Data' });
-});
+  const exampleData = { message: 'Hello from the backend!' };
+  res.json(exampleData); // Mengirim data sebagai JSON ke frontend
+});y
 
 // Menjalankan server
 app.listen(port, () => {
