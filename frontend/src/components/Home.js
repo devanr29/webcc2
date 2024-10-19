@@ -31,7 +31,7 @@ const Home = () => {
 
       {/* Navbar */}
       <div className="navbar">
-        <a href="javascript:void(0);" onClick={openNav} className="menu-btn">☰</a>
+        <button onClick={openNav} className="menu-btn">☰</button>
         <a href="#" className="navbar-item">Beranda</a>
         <a href="#team" className="navbar-item">Tim</a>
         <a href="#work" className="navbar-item">Proyek</a>
@@ -60,7 +60,6 @@ const Home = () => {
         <h2>Anggota Tim</h2>
         <p>Dengan bangga memperkenalkan:</p>
         <div className="team-row">
-          {/* Tim Anggota */}
           {[...Array(4)].map((_, i) => (
             <div className="team-member" key={i}>
               <img src={`./gambar/member${i + 1}.jpg`} alt="Member" className="member-img" />
@@ -88,9 +87,9 @@ const Home = () => {
       {/* Footer */}
       <footer className="footer">
         <p>Ikuti Kami</p>
-        <a href="#" className="social-button">Facebook</a>
-        <a href="#" className="social-button">Twitter</a>
-        <a href="#" className="social-button">Instagram</a>
+        <button className="social-button">Facebook</button>
+        <button className="social-button">Twitter</button>
+        <button className="social-button">Instagram</button>
       </footer>
     </div>
   );

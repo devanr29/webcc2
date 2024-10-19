@@ -17,7 +17,7 @@ const Login = () => {
       navigate('/home'); // Gunakan navigate dari useNavigate
     } catch (error) {
       console.error('Login failed:', error.message);
-    }   
+    }
   };
 
   return (
@@ -46,7 +46,7 @@ const Login = () => {
           <label>
             <input type="checkbox" /> Remember me
           </label>
-          <a href="#">Forgot password?</a>
+          <a href="#">Forgot password?</a> {/* Berikan href valid jika ada */}
         </div>
         <button type="submit" className="button">Login</button>
         <div className="register-link">
