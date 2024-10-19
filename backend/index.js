@@ -25,7 +25,7 @@ app.post('/login', (req, res) => {
 app.get('/api/data', (req, res) => {
   const exampleData = { message: 'Hello from the backend!' };
   res.json(exampleData); // Mengirim data sebagai JSON ke frontend
-});y
+});
 
 // Menjalankan server
 app.listen(port, () => {
