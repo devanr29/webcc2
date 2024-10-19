@@ -46,7 +46,7 @@ const Login = () => {
           <label>
             <input type="checkbox" /> Remember me
           </label>
-          <a href="#">Forgot password?</a> {/* Berikan href valid jika ada */}
+          <a href="/home">Forgot password?</a> {/* Berikan href valid jika ada */}
         </div>
         <button type="submit" className="button">Login</button>
         <div className="register-link">

@@ -32,7 +32,7 @@ const Home = () => {
       {/* Navbar */}
       <div className="navbar">
         <button onClick={openNav} className="menu-btn">☰</button>
-        <a href="#" className="navbar-item">Beranda</a>
+        <a href="/home" className="navbar-item">Beranda</a>
         <a href="#team" className="navbar-item">Tim</a>
         <a href="#work" className="navbar-item">Proyek</a>
         <a href="#contact" className="navbar-item">Kontak</a>
